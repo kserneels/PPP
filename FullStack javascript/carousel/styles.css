@@ -1,0 +1,59 @@
+/* carousel.css */
+.carousel-container {
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 24px;
+}
+
+.left {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.right {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dots span {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+.dots .active {
+    background-color: #717171;
+}
