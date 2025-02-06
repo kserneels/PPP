@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#projects div {
+    margin-bottom: 10px;
+}
+
+.todo-item {
+    margin: 10px 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Live Validation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form id="registrationForm" novalidate>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span class="error-message" id="email-error">Please enter a valid email.</span>
+  </div>
+
+  <div class="form-group">
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" required>
+    <span class="error-message" id="country-error">Please enter your country.</span>
+  </div>
+
+  <div class="form-group">
+    <label for="zip">Zip Code:</label>
+    <input type="text" id="zip" name="zip" pattern="^\d{5}$" required>
+    <span class="error-message" id="zip-error">Zip code must be 5 digits.</span>
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <span class="error-message" id="password-error">Password is required.</span>
+  </div>
+
+  <div class="form-group">
+    <label for="password-confirmation">Confirm Password:</label>
+    <input type="password" id="password-confirmation" name="password-confirmation" required>
+    <span class="error-message" id="password-confirmation-error">Passwords must match.</span>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
